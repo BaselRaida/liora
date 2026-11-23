@@ -1,4 +1,4 @@
-const CACHE = 'liora-v1';
+const CACHE = 'liora-v2';
 const FILES = ['./', './index.html', './styles.css', './js/core.js', './js/ui.js', './js/views.js', './js/forms.js', './icon.svg', './manifest.json'];
 
 self.addEventListener('install', e => {

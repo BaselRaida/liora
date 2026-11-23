@@ -81,7 +81,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 const opts = (arr, sel) => arr.map(x => { const [v, l] = Array.isArray(x) ? x : [x, x]; return `<option value="${esc(v)}" ${v === sel ? 'selected' : ''}>${esc(l)}</option>`; }).join('');
 const whOpts = sel => opts(db.warehouses.map(w => [w.id, w.name]), sel);
 const thumb = p => `<div class="thumb">${p?.img ? `<img src="${p.img}" alt="">` : '👗'}</div>`;
-const emptyBox = (emoji, text, btn = '') => `<div class="empty"><span class="big">${emoji}</span>${text}${btn ? `<div style="margin-top:12px">${btn}</div>` : ''}</div>`;
+const emptyBox = (emoji, text, btn = '') => `<div class="empty"><span class="big">${emoji}</span>${text}${btn ? `<div class="empty-actions">${btn}</div>` : ''}</div>`;
 const kpi = (lbl, val, hint = '', cls = '') => `<div class="card kpi ${cls}"><div class="lbl">${lbl}</div><div class="val">${val}</div>${hint ? `<div class="hint">${hint}</div>` : ''}</div>`;
 const signCls = v => v < 0 ? 'neg' : '';
 

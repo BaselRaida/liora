@@ -112,6 +112,7 @@ td.n,th.n{text-align:left;direction:ltr;white-space:nowrap}
 td.actions{white-space:nowrap;text-align:left}
 .empty{text-align:center;color:var(--muted);padding:30px 10px}
 .empty .big{font-size:40px;display:block;margin-bottom:6px}
+.empty-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:16px}
 
 .tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:500;background:var(--blush-l);color:var(--rose-d);white-space:nowrap}
 .tag.green{background:var(--green-l);color:var(--green)}
